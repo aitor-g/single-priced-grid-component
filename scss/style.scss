@@ -1,1 +1,157 @@
 @use '../scss' as *;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: $light-gray;
+  @include colCenter;
+}
+
+.component {
+  &__join {
+    background-color: $white;
+
+    &-title {
+      color: $cyan;
+    }
+
+    &-subtitle {
+      color: $green;
+    }
+
+    &-text {
+      color: $gray;
+    }
+  }
+
+  &__suscription {
+    background-color: $cyan;
+
+    &-title {
+      color: $white;
+    }
+
+    &-price {
+      color: $white;
+
+      &_month {
+        color: $light-gray;
+      }
+    }
+
+    &-description {
+      color: $white;
+    }
+
+    &-button {
+      background-color: $green;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  &__why {
+    background-color: rgba($cyan, 0.6);
+
+    &-title {
+      color: $white;
+    }
+
+    &-list {
+      color: $light-gray;
+      list-style-type: none;
+
+      &-list_item {}
+    }
+  }
+
+  @include onDesktop {
+    width: 635px;
+    height: 475px;
+
+    .wrapper {
+      display: flex;
+    }
+
+    &__join {
+      padding: 2.5rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+
+      &-title {}
+
+      &-subtitle {}
+
+      &-text {}
+    }
+
+    &__suscription {
+      width: 50%;
+      padding: 2.5rem;
+      border-radius: 0 0 0 0.5rem;
+
+      &-title {}
+
+      &-price {
+        &_month {}
+      }
+
+      &-description {}
+
+      &-button {}
+    }
+
+    &__why {
+      width: 50%;
+      padding: 2.5rem;
+      border-radius: 0 0 0.5rem 0;
+
+      &-title {}
+
+      &-list {
+        &-list_item {}
+      }
+    }
+  }
+
+  @include onMobile {
+
+    &__join {
+
+      &-title {}
+
+      &-subtitle {}
+
+      &-text {}
+    }
+
+    &__suscription {
+      &-title {}
+
+      &-price {
+        &_month {}
+      }
+
+      &-description {}
+
+      &-button {}
+    }
+
+    &__why {
+      &-title {}
+
+      &-list {
+        &-list_item {}
+      }
+    }
+  }
+}

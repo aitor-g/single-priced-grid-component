@@ -1,3 +1,87 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.component__join {
+  background-color: hsl(255, 100%, 100%);
+}
+.component__join-title {
+  color: hsl(179, 62%, 43%);
+}
+.component__join-subtitle {
+  color: hsl(71, 73%, 54%);
+}
+.component__join-text {
+  color: hsl(218, 22%, 67%);
+}
+.component__suscription {
+  background-color: hsl(179, 62%, 43%);
+}
+.component__suscription-title {
+  color: hsl(255, 100%, 100%);
+}
+.component__suscription-price {
+  color: hsl(255, 100%, 100%);
+}
+.component__suscription-price_month {
+  color: hsl(204, 43%, 93%);
+}
+.component__suscription-description {
+  color: hsl(255, 100%, 100%);
+}
+.component__suscription-button {
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(255, 100%, 100%);
+  text-align: center;
+}
+.component__why {
+  background-color: rgba(42, 178, 175, 0.6);
+}
+.component__why-title {
+  color: hsl(255, 100%, 100%);
+}
+.component__why-list {
+  color: hsl(204, 43%, 93%);
+  list-style-type: none;
+}
+@media screen and (min-width: 1440px) {
+  .component {
+    width: 635px;
+    height: 475px;
+  }
+  .component .wrapper {
+    display: flex;
+  }
+  .component__join {
+    padding: 2.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .component__suscription {
+    width: 50%;
+    padding: 2.5rem;
+    border-radius: 0 0 0 0.5rem;
+  }
+  .component__why {
+    width: 50%;
+    padding: 2.5rem;
+    border-radius: 0 0 0.5rem 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
