@@ -1,0 +1,1 @@
+# single-priced-grid-component
