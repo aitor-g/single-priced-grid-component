@@ -18,11 +18,95 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 660px) {
+  .component {
+    width: 635px;
+    height: 480px;
+  }
+  .component .wrapper {
+    display: flex;
+  }
+  .component__join {
+    padding: 2.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .component__join-title {
+    font-size: 1.5rem;
+  }
+  .component__join-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .component__join-text {
+    line-height: 1.5rem;
+  }
+  .component__suscription {
+    width: 50%;
+    padding: 2.5rem;
+    border-radius: 0 0 0 0.5rem;
+  }
+  .component__suscription-title {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+  .component__suscription-price {
+    font-size: 2rem;
+  }
+  .component__suscription-description {
+    margin-top: 0.5rem;
+  }
+  .component__why {
+    width: 50%;
+    padding: 2.5rem;
+    border-radius: 0 0 0.5rem 0;
+  }
+}
+@media screen and (max-width: 659px) {
+  .component {
+    width: 315px;
+    height: 725px;
+  }
+  .component__join {
+    border-radius: 5px 5px 0 0;
+    padding: 1.5rem;
+  }
+  .component__join-title {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+  }
+  .component__join-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.3rem;
+  }
+  .component__join-text {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .component__suscription {
+    padding: 1.5rem;
+  }
+  .component__suscription-title {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .component__suscription-price {
+    font-size: 1.8rem;
+  }
+  .component__suscription-description {
+    margin-top: 0.5rem;
+  }
+  .component__why {
+    border-radius: 0 0 5px 5px;
+    padding: 1.5rem;
+  }
+}
 .component__join {
   background-color: hsl(255, 100%, 100%);
 }
 .component__join-title {
   color: hsl(179, 62%, 43%);
+  margin-bottom: 1.5rem;
 }
 .component__join-subtitle {
   color: hsl(71, 73%, 54%);
@@ -35,53 +119,49 @@ body {
 }
 .component__suscription-title {
   color: hsl(255, 100%, 100%);
+  letter-spacing: 0.05rem;
 }
 .component__suscription-price {
   color: hsl(255, 100%, 100%);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 .component__suscription-price_month {
   color: hsl(204, 43%, 93%);
+  font-weight: 200;
+  font-size: 1rem;
+  margin-left: 0.5rem;
 }
 .component__suscription-description {
   color: hsl(255, 100%, 100%);
+  font-weight: 200;
 }
 .component__suscription-button {
   background-color: hsl(71, 73%, 54%);
   color: hsl(255, 100%, 100%);
+  padding: 0.8rem 0;
+  margin-top: 2rem;
+  border-radius: 5px;
   text-align: center;
+  box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.05);
 }
 .component__why {
-  background-color: rgba(42, 178, 175, 0.6);
+  background-color: rgba(42, 178, 175, 0.8);
 }
 .component__why-title {
   color: hsl(255, 100%, 100%);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
 }
 .component__why-list {
   color: hsl(204, 43%, 93%);
   list-style-type: none;
+  font-size: 0.9rem;
+  font-weight: 200;
 }
-@media screen and (min-width: 1440px) {
-  .component {
-    width: 635px;
-    height: 475px;
-  }
-  .component .wrapper {
-    display: flex;
-  }
-  .component__join {
-    padding: 2.5rem;
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
-  .component__suscription {
-    width: 50%;
-    padding: 2.5rem;
-    border-radius: 0 0 0 0.5rem;
-  }
-  .component__why {
-    width: 50%;
-    padding: 2.5rem;
-    border-radius: 0 0 0.5rem 0;
-  }
+.component__why-list_item {
+  margin-bottom: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

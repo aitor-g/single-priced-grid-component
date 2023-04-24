@@ -18,11 +18,112 @@ body {
 }
 
 .component {
+  @include onDesktop {
+    width: 635px;
+    height: 480px;
+
+    .wrapper {
+      display: flex;
+    }
+
+    &__join {
+      padding: $p-xl;
+      border-radius: 0.5rem 0.5rem 0 0;
+
+      &-title {
+        font-size: 1.5rem;
+      }
+
+      &-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      &-text {
+        line-height: 1.5rem;
+      }
+    }
+
+    &__suscription {
+      width: 50%;
+      padding: $p-xl;
+      border-radius: 0 0 0 0.5rem;
+
+      &-title {
+        font-size: 1.05rem;
+        margin-bottom: 1rem;
+      }
+
+      &-price {
+        font-size: 2rem;
+      }
+
+      &-description {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &__why {
+      width: 50%;
+      padding: $p-xl;
+      border-radius: 0 0 0.5rem 0;
+    }
+  }
+
+  @include onMobile {
+    width: 315px;
+    height: 725px;
+
+    &__join {
+      border-radius: 5px 5px 0 0;
+      padding: $p-sm;
+
+      &-title {
+        font-size: 1.2rem;
+        margin-top: 0.2rem;
+      }
+
+      &-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1.3rem;
+      }
+
+      &-text {
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__suscription {
+      padding: $p-sm;
+
+      &-title {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &-price {
+        font-size: 1.8rem;
+      }
+
+      &-description {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &__why {
+      border-radius: 0 0 5px 5px;
+      padding: $p-sm;
+    }
+  }
+
   &__join {
     background-color: $white;
 
     &-title {
       color: $cyan;
+      margin-bottom: 1.5rem;
     }
 
     &-subtitle {
@@ -39,118 +140,56 @@ body {
 
     &-title {
       color: $white;
+      letter-spacing: 0.05rem;
     }
 
     &-price {
       color: $white;
+      font-weight: $bold;
+      display: flex;
+      align-items: center;
 
       &_month {
         color: $light-gray;
+        font-weight: $light;
+        font-size: 1rem;
+        margin-left: 0.5rem;
       }
     }
 
     &-description {
       color: $white;
+      font-weight: $light;
     }
 
     &-button {
       background-color: $green;
       color: $white;
+      padding: 0.8rem 0;
+      margin-top: 2rem;
+      border-radius: 5px;
       text-align: center;
+      box-shadow: 2px 5px 5px 5px rgba(black, 0.05);
     }
   }
 
   &__why {
-    background-color: rgba($cyan, 0.6);
+    background-color: rgba($cyan, 0.8);
 
     &-title {
       color: $white;
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
     }
 
     &-list {
       color: $light-gray;
       list-style-type: none;
+      font-size: 0.9rem;
+      font-weight: $light;
 
-      &-list_item {}
-    }
-  }
-
-  @include onDesktop {
-    width: 635px;
-    height: 475px;
-
-    .wrapper {
-      display: flex;
-    }
-
-    &__join {
-      padding: 2.5rem;
-      border-radius: 0.5rem 0.5rem 0 0;
-
-      &-title {}
-
-      &-subtitle {}
-
-      &-text {}
-    }
-
-    &__suscription {
-      width: 50%;
-      padding: 2.5rem;
-      border-radius: 0 0 0 0.5rem;
-
-      &-title {}
-
-      &-price {
-        &_month {}
-      }
-
-      &-description {}
-
-      &-button {}
-    }
-
-    &__why {
-      width: 50%;
-      padding: 2.5rem;
-      border-radius: 0 0 0.5rem 0;
-
-      &-title {}
-
-      &-list {
-        &-list_item {}
-      }
-    }
-  }
-
-  @include onMobile {
-
-    &__join {
-
-      &-title {}
-
-      &-subtitle {}
-
-      &-text {}
-    }
-
-    &__suscription {
-      &-title {}
-
-      &-price {
-        &_month {}
-      }
-
-      &-description {}
-
-      &-button {}
-    }
-
-    &__why {
-      &-title {}
-
-      &-list {
-        &-list_item {}
+      &_item {
+        margin-bottom: 0.2rem;
       }
     }
   }
